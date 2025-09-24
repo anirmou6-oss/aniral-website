@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ANIRAL – Construction & Agriculture</title>
+  <meta name="description" content="ANIRAL – Entreprise de construction & solutions agricoles. Projets publics, privés et marchés de l'État." />
+  <style>
+    :root{
+      --bg:#0f172a; --text:#e5e7eb; --muted:#94a3b8;
+      --border:#1f2937; --chip:#0a0f1f; --brand:#22c55e;
+    }
+    *{box-sizing:border-box} html,body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:#0f172a;color:var(--text)}
+    a{color:inherit;text-decoration:none} img{max-width:100%;display:block}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    header{position:sticky;top:0;z-index:10;background:#0f172aCC;backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{font-weight:800;letter-spacing:.3px} .muted{color:var(--muted)}
+    .links{display:flex;gap:16px;align-items:center}
+    .pill{display:inline-block;padding:6px 10px;border:1px solid var(--border);border-radius:999px;background:var(--chip);color:var(--muted);font-size:12px}
+    .btn{padding:10px 14px;border:0;border-radius:12px;background:linear-gradient(135deg,var(--brand),#16a34a);color:#04110a;font-weight:800}
+    section{padding:56px 0;border-top:1px solid var(--border)}
+    h1{font-size:38px;margin:.3em 0} h2{margin:0 0 18px}
+    .grid{display:grid;gap:14px} .two{grid-template-columns:1.1fr .9fr} .three{grid-template-columns:repeat(3,1fr)}
+    .card{border:1px solid var(--border);border-radius:16px;background:linear-gradient(180deg,#0f172a,#0a1328);padding:16px}
+    input,textarea,select{width:100%;padding:12px;border-radius:12px;border:1px solid var(--border);background:#0a0f1f;color:var(--text)}
+    textarea{min-height:120px;resize:vertical}
+    footer{padding:32px 0;border-top:1px solid var(--border)} .right{justify-self:end}
+    @media (max-width:900px){.two,.three{grid-template-columns:1fr} .links{display:none}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">ANIRAL <span class="muted">Construction & Agriculture</span></div>
+        <div class="links">
+          <a href="#about">À propos</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projets</a>
+          <a href="#choice">Choix projet</a>
+          <a href="#contact" class="btn">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container two" id="hero">
+      <div>
+        <span class="pill">Entreprise enregistrée • مشاريع البناء والفلاحة</span>
+        <h1>Solutions fiables للبناء والفلاحة</h1>
+        <p class="muted">Projets publics et privés : génie civil, bâtiment, irrigation, maintenance. Qualité, sécurité et respect des délais.</p>
+        <p style="display:flex;gap:10px;margin-top:10px">
+          <a href="#contact" class="btn">Demander un devis</a>
+          <a href="#tenders" class="pill">Marchés publics</a>
+        </p>
+      </div>
+      <div class="grid three">
+        <div class="card"><strong>Construction</strong><br><span class="muted">Génie civil & Bâtiment</span></div>
+        <div class="card"><strong>Agriculture</strong><br><span class="muted">Irrigation & Équipement</span></div>
+        <div class="card"><strong>Public</strong><br><span class="muted">Appels d'offres</span></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>À propos d'ANIRAL</h2>
+        <div class="card">
+          ANIRAL est une entreprise basée à Montréal avec des partenaires au Maroc, opérant dans la construction et l’agriculture.
+          Vision : construire et cultiver durablement, avec des chantiers sûrs et des budgets maîtrisés.
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="grid three">
+          <div class="card"><strong>Génie civil</strong><br><span class="muted">VRD, routes, fondations, ouvrages</span></div>
+          <div class="card"><strong>Bâtiment</strong><br><span class="muted">Maçonnerie, électricité, plomberie</span></div>
+          <div class="card"><strong>Agriculture</strong><br><span class="muted">Goutte-à-goutte, serres, pompage</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Références & Projets</h2>
+        <div class="grid three">
+          <div class="card"><strong>École rurale</strong><br><span class="muted">Réhabilitation & accessibilité</span></div>
+          <div class="card"><strong>Irrigation 5 ha</strong><br><span class="muted">Pompage solaire & ferti‑irrigation</span></div>
+          <div class="card"><strong>Voirie 2.4 km</strong><br><span class="muted">Ouvrages hydrauliques</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="choice">
+      <div class="container">
+        <h2>Choix projet</h2>
+        <div class="two grid">
+          <div class="card">
+            <label for="projet" class="pill">Sélection</label>
+            <select id="projet" style="margin-top:10px">
+              <option value="">-- Sélectionnez --</option>
+              <option value="construction">Construction</option>
+              <option value="agriculture">Agriculture</option>
+              <option value="public">Marchés publics</option>
+            </select>
+            <p class="muted" style="margin-top:10px">Le descriptif s’affiche à droite. Le choix peut être envoyé avec votre demande de devis.</p>
+          </div>
+          <div id="choix-result" class="card muted">Aucun projet sélectionné.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tenders">
+      <div class="container">
+        <h2>Marchés publics / Appels d’offres</h2>
+        <div class="card">
+          Dossier administratif & technique, assurances HSE, plan qualité et méthodologie prêts.
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <form action="https://formsubmit.co/anirmou6@gmail.com" method="POST" class="grid two">
+          <input name="name" placeholder="Nom complet" required />
+          <input name="email" type="email" placeholder="Email" required />
+          <input name="phone" placeholder="Téléphone" />
+          <input name="subject" placeholder="Objet" />
+          <textarea name="message" placeholder="Votre message..." required></textarea>
+          <input type="hidden" name="_subject" value="Nouveau message via ANIRAL" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="true" />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+          <button class="btn right" type="submit">Envoyer</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap">
+      <div>© <span id="y"></span> ANIRAL</div>
+      <div class="muted">Politique de confidentialité — Conditions</div>
+    </div>
+  </footer>
+
+  <script>
+    // year
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // choix projet
+    const sel = document.getElementById('projet');
+    const out = document.getElementById('choix-result');
+    if(sel && out){
+      const txt = {
+        construction: "🏗️ Construction : bâtiments, routes, génie civil, VRD. Suivi HSE et délais garantis.",
+        agriculture: "🌱 Agriculture : irrigation, serres, forages, pompage solaire, équipement des exploitations.",
+        public: "📑 Marchés publics : dossiers complets, appels d’offres, références et assurances.",
+      };
+      sel.addEventListener('change', () => out.textContent = txt[sel.value] || "Aucun projet sélectionné.");
+    }
+  </script>
+</body>
+</html>
